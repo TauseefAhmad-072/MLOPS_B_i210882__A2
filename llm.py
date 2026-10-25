@@ -105,7 +105,7 @@ class OpenAIClient(LLMClient):
         return text
 
 
-DEFAULT_MODELS = {"anthropic": "claude-sonnet-5-5", "openai": "gpt-4o"}
+DEFAULT_MODELS = {"anthropic": "claude-sonnet-4-5", "openai": "gpt-4o"}
 
 
 def client_from_env(env=None):
