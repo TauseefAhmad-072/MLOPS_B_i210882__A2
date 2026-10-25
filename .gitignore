@@ -1,0 +1,76 @@
+# ---------------------------------------------------------------
+# Secrets — MUST be ignored (never commit real credentials)
+# ---------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------------------------------------------------------------
+# Python virtual environment (your venv folder)
+# ---------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ---------------------------------------------------------------
+# Python bytecode and caches
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+
+# ---------------------------------------------------------------
+# Test and coverage artifacts
+# ---------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# ---------------------------------------------------------------
+# Agent run outputs (reports and traces from testing)
+# ---------------------------------------------------------------
+*.trace.jsonl
+flask.json
+hello.json
+requests.json
+micrograd.json
+report_*.json
+# NOTE: sample_report.json is intentionally NOT ignored — the assignment requires it
+
+# ---------------------------------------------------------------
+# Editor / OS files
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------------------
+# Logs and temp
+# ---------------------------------------------------------------
+*.log
+*.tmp
+tmp/
+temp/

@@ -1,0 +1,15 @@
+{
+    "repository": "https://github.com/pallets/flask",
+    "violations": [
+        {
+            "rule_id": "CI-001",
+            "category": "ci",
+            "severity": "low",
+            "file": ".github/workflows/tests.yaml",
+            "line": null,
+            "description": "Workflow uses a floating branch reference for a third-party action",
+            "evidence": "parse_workflow observed a `uses:` entry pinned to a branch reference instead of a version tag or commit SHA",
+            "recommendation": "Pin third-party actions to a specific version tag or commit SHA to prevent supply-chain drift"
+        }
+    ]
+}
